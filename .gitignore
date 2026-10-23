@@ -1,0 +1,14 @@
+node_modules
+dist
+cache
+artifacts
+.env
+.env.local
+.DS_Store
+zkp/build/*
+!zkp/build/.gitkeep
+zkp/issuer-private.json
+zkp/issuer-public.json
+zkp/credential-registry.json
+zkp/credential-registry-public.json
+zkp/credentials/*.json

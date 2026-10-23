@@ -1,0 +1,9 @@
+node_modules
+dist
+cache
+artifacts
+.env
+.env.local
+.DS_Store
+zkp/build/*
+!zkp/build/.gitkeep

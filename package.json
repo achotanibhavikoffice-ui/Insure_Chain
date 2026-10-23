@@ -1,0 +1,43 @@
+{
+  "name": "insurechain-zkp-life-insurance",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "contracts:compile": "hardhat compile",
+    "contracts:test": "hardhat test",
+    "zkp:compile": "node scripts/zkp/compile.mjs",
+    "zkp:setup": "node scripts/zkp/setup.mjs",
+    "zkp:prove": "node scripts/zkp/prove.mjs",
+    "zkp:verify": "node scripts/zkp/verify.mjs",
+    "zkp:calldata": "node scripts/zkp/calldata.mjs",
+    "zkp:issuer:init": "node scripts/zkp/issuer.mjs init",
+    "zkp:issuer:issue": "node scripts/zkp/issuer.mjs issue",
+    "zkp:issuer:revoke": "node scripts/zkp/issuer.mjs revoke",
+    "zkp:publish-root": "hardhat run scripts/zkp/publish-root.cjs --network localhost",
+    "zkp:test:circuit": "node scripts/zkp/test-circuit.mjs",
+    "zkp:compare": "node scripts/zkp/compare.mjs",
+    "zkp:compare:gas": "hardhat run scripts/zkp/compare-gas.cjs --network hardhat",
+    "zkp:all": "node scripts/zkp/setup.mjs"
+  },
+  "dependencies": {
+    "circomlibjs": "^0.1.7",
+    "ethers": "^6.15.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "snarkjs": "^0.7.6"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@vitejs/plugin-react": "^4.3.4",
+    "chai": "^4.5.0",
+    "circom2": "^0.2.23",
+    "circomlib": "^2.0.5",
+    "hardhat": "^2.26.3",
+    "vite": "^6.0.7"
+  }
+}
